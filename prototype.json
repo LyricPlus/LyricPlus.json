@@ -1,33 +1,39 @@
 {
-    "lyric": {
+    "lyricplus": {
         "meta": {
             "author": "",
-            "language": {
-                "default": "",
-                "all": []
-            }
+            "language": "全曲预设的语言",
+            "schema_version": "undefined"
         },
         "content": [
             {
-                "type": "column",
+                "hierarchy": "column",
+                "structure":"verse/chorus/etc.",
+                "meta": {
+                    "note":"这段meta是作为optional的",
+                    "language": "较全局的语言更优先",
+                    "singer": []
+                },
                 "content": [
                     {
-                        "type": "group",
+                        "hierarchy": "group",
+                        "note":"content中可以包含1或多个sentence",
                         "content": [
                             {
-                                "type": "sentence",
+                                "hierarchy": "sentence",
                                 "meta": {
-                                    "language": "较全局的语言更优先",
+                                    "note":"这段meta是作为optional的",
+                                    "language": "较column的语言更优先",
                                     "singer": []
                                 },
                                 "words": [
                                     {
-                                        "type": "part",
+                                        "type": "phrase",
                                         "language": "较sentence的语言更优先",
                                         "content": "可以是一句完整的歌词"
                                     },
                                     {
-                                        "type": "part",
+                                        "type": "phrase",
                                         "language": "较sentence的语言更优先",
                                         "content": {
                                             "base": "可以是一个需要注音的单词",
@@ -46,21 +52,26 @@
                                 }
                             },
                             {
-                                "type": "sentence",
+                                "hierarchy": "sentence",
                                 "note": "允许一个group有多个sentence是因为可能一句的位置同时存在两句不同的歌词叠在一起唱，不是指多声部延迟的情况"
-                            },
+                            }
                         ]
                     },
                     {
-                        "type": "group"
+                        "hierarchy": "group"
                     },
                     {
-                        "type": "group"
+                        "hierarchy": "group"
                     }
                 ]
             },
             {
-                "type": "column"
+                "hierarchy":"column",
+                "structure":"interlude"
+            },
+            {
+                "hierarchy": "column",
+                "structure":"verse/chorus/etc."
             }
         ]
     }
