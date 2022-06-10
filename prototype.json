@@ -2,11 +2,11 @@
     "lyricplus": {
         "meta": {
             "author": {
-                "lyricists":"",
-                "composers":"",
-                "translator":{
-                    "zh-Hans":"",
-                    "en":""
+                "lyricists": "",
+                "composers": "",
+                "translator": {
+                    "zh-Hans": "",
+                    "en": ""
                 }
             },
             "language": "全曲预设的语言",
@@ -36,12 +36,17 @@
                                 "content": [
                                     {
                                         "type": "phrase",
-                                        "language": "较sentence的语言更优先",
+                                        "meta":{
+                                            "language": "较sentence的语言更优先",
+                                        },
                                         "content": "可以是一句完整的歌词"
                                     },
                                     {
                                         "type": "phrase",
-                                        "language": "较sentence的语言更优先",
+                                        "hyphen": "true/false",
+                                        "meta":{
+                                            "language": "较sentence的语言更优先",
+                                        },
                                         "content": [
                                             {
                                                 "type": "atom",
