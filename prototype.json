@@ -1,0 +1,67 @@
+{
+    "lyric": {
+        "meta": {
+            "author": "",
+            "language": {
+                "default": "",
+                "all": []
+            }
+        },
+        "content": [
+            {
+                "type": "column",
+                "content": [
+                    {
+                        "type": "group",
+                        "content": [
+                            {
+                                "type": "sentence",
+                                "meta": {
+                                    "language": "较全局的语言更优先",
+                                    "singer": []
+                                },
+                                "words": [
+                                    {
+                                        "type": "part",
+                                        "language": "较sentence的语言更优先",
+                                        "content": "可以是一句完整的歌词"
+                                    },
+                                    {
+                                        "type": "part",
+                                        "language": "较sentence的语言更优先",
+                                        "content": {
+                                            "base": "可以是一个需要注音的单词",
+                                            "ruby": {
+                                                "content": "",
+                                                "romanization": "pinyin/romanji/romaja/ateji-language_name",
+                                                "language": "指ruby的语言，如果有的话，例如是借字或者写作A读作B的情景"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "translation": {
+                                    "zh-Hans": "",
+                                    "ja": "",
+                                    "en-GB": ""
+                                }
+                            },
+                            {
+                                "type": "sentence",
+                                "note": "允许一个group有多个sentence是因为可能一句的位置同时存在两句不同的歌词叠在一起唱，不是指多声部延迟的情况"
+                            },
+                        ]
+                    },
+                    {
+                        "type": "group"
+                    },
+                    {
+                        "type": "group"
+                    }
+                ]
+            },
+            {
+                "type": "column"
+            }
+        ]
+    }
+}
