@@ -76,7 +76,11 @@
                                 ],
                                 "translation": {
                                     "ko": "",
-                                    "zh-Hans": "",
+                                    "zh-Hans": {
+                                        "note":"允许存在多个不同版本的译文",
+                                        "zhangsan":"张三译文",
+                                        "lisi":"李四译文"
+                                    },
                                     "ja-Hira": "",
                                     "en-GB": ""
                                 }
