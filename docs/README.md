@@ -7,3 +7,5 @@
 + 语言代码
 + hyphen功能
 + phrase内分段ruby
++ singer功能
++ group功能
