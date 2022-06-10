@@ -38,6 +38,7 @@
                                         "type": "phrase",
                                         "meta":{
                                             "language": "较sentence的语言更优先",
+                                            "singer": []
                                         },
                                         "content": "可以是一句完整的歌词"
                                     },
@@ -46,6 +47,7 @@
                                         "hyphen": "true/false",
                                         "meta":{
                                             "language": "较sentence的语言更优先",
+                                            "singer": []
                                         },
                                         "content": [
                                             {
