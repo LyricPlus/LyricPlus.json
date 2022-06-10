@@ -8,25 +8,25 @@
         "content": [
             {
                 "hierarchy": "column",
-                "structure":"verse/chorus/etc.",
+                "structure": "verse/chorus/etc.",
                 "meta": {
-                    "note":"这段meta是作为optional的",
+                    "note": "这段meta是作为optional的",
                     "language": "较全局的语言更优先",
                     "singer": []
                 },
                 "content": [
                     {
                         "hierarchy": "group",
-                        "note":"content中可以包含1或多个sentence",
+                        "note": "content中可以包含1或多个sentence",
                         "content": [
                             {
                                 "hierarchy": "sentence",
                                 "meta": {
-                                    "note":"这段meta是作为optional的",
+                                    "note": "这段meta是作为optional的",
                                     "language": "较column的语言更优先",
                                     "singer": []
                                 },
-                                "words": [
+                                "content": [
                                     {
                                         "type": "phrase",
                                         "language": "较sentence的语言更优先",
@@ -35,19 +35,35 @@
                                     {
                                         "type": "phrase",
                                         "language": "较sentence的语言更优先",
-                                        "content": {
-                                            "base": "可以是一个需要注音的单词",
-                                            "ruby": {
-                                                "content": "",
-                                                "romanization": "pinyin/romanji/romaja/ateji-language_name",
-                                                "language": "指ruby的语言，如果有的话，例如是借字或者写作A读作B的情景"
+                                        "content": [
+                                            {
+                                                "type": "atom",
+                                                "content": "振り仮名",
+                                                "ruby": {
+                                                    "content": "ふ",
+                                                    "romanization": "pinyin/romanji/romaja/ateji",
+                                                    "language": "指ruby的语言，如果有的话，例如是借字或者写作A读作B的情景"
+                                                }
+                                            },
+                                            {
+                                                "type": "atom",
+                                                "content": "り"
+                                            },
+                                            {
+                                                "type": "atom",
+                                                "content": "仮名",
+                                                "ruby": {
+                                                    "content": "がな",
+                                                    "romanization": "hiragana"
+                                                }
                                             }
-                                        }
+                                        ]
                                     }
                                 ],
                                 "translation": {
+                                    "ko": "",
                                     "zh-Hans": "",
-                                    "ja": "",
+                                    "ja-Hira": "",
                                     "en-GB": ""
                                 }
                             },
@@ -66,12 +82,12 @@
                 ]
             },
             {
-                "hierarchy":"column",
-                "structure":"interlude"
+                "hierarchy": "column",
+                "structure": "interlude"
             },
             {
                 "hierarchy": "column",
-                "structure":"verse/chorus/etc."
+                "structure": "verse/chorus/etc."
             }
         ]
     }
