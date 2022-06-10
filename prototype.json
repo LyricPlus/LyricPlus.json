@@ -1,7 +1,14 @@
 {
     "lyricplus": {
         "meta": {
-            "author": "",
+            "author": {
+                "lyricists":"",
+                "composers":"",
+                "translator":{
+                    "zh-Hans":"",
+                    "en":""
+                }
+            },
             "language": "全曲预设的语言",
             "schema_version": "undefined"
         },
