@@ -33,15 +33,8 @@
                                     "language": "较column的语言更优先",
                                     "singer": []
                                 },
+                                "note":"对于平凡的歌曲，sentence允许直接令content是一个string，否则就要按照层次套phrase和atom",
                                 "content": [
-                                    {
-                                        "type": "phrase",
-                                        "meta":{
-                                            "language": "较sentence的语言更优先",
-                                            "singer": []
-                                        },
-                                        "content": "可以是一句完整的歌词"
-                                    },
                                     {
                                         "type": "phrase",
                                         "hyphen": "true/false",
