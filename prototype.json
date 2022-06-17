@@ -52,7 +52,7 @@
                                                 "content": "振り仮名",
                                                 "ruby": {
                                                     "content": "ふ",
-                                                    "romanization": "pinyin/romanji/romaja/ateji",
+                                                    "romanization": ["pinyin/romanji/romaja/ateji"],
                                                     "language": "指ruby的语言，如果有的话，例如是借字或者写作A读作B的情景"
                                                 }
                                             },
@@ -66,11 +66,11 @@
                                                 "ruby": [
                                                     {
                                                         "content": "がな",
-                                                        "romanization": "hiragana"
+                                                        "romanization": ["hiragana"]
                                                     },
                                                     {
                                                         "content": "gana",
-                                                        "romanization": "romanji"
+                                                        "romanization": ["romanji"]
                                                     }
                                                 ]
                                             }
