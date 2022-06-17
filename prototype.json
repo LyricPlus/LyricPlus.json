@@ -63,10 +63,16 @@
                                             {
                                                 "type": "atom",
                                                 "content": "仮名",
-                                                "ruby": {
-                                                    "content": "がな",
-                                                    "romanization": "hiragana"
-                                                }
+                                                "ruby": [
+                                                    {
+                                                        "content": "がな",
+                                                        "romanization": "hiragana"
+                                                    },
+                                                    {
+                                                        "content": "gana",
+                                                        "romanization": "romanji"
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
