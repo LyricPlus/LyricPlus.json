@@ -41,7 +41,7 @@
                                 "content": [
                                     {
                                         "type": "phrase",
-                                        "hyphen": "true/false",
+                                        "hyphen": "true/false, 为空则默认应为false",
                                         "meta": {
                                             "language": "较sentence的语言更优先",
                                             "singer": []

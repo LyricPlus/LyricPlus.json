@@ -20,7 +20,7 @@
                     "content": "高",
                     "ruby": {
                         "content": "Ko",
-                        "romanization": "POJ"
+                        "romanization": ["POJ","TL"]
                     }
                 },
                 {
@@ -28,7 +28,7 @@
                     "content": "雄",
                     "ruby": {
                         "content": "hiông",
-                        "romanization": "POJ"
+                        "romanization": ["POJ","TL"]
                     }
                 },
             ]
@@ -40,10 +40,15 @@
                 {
                     "type": "atom",
                     "content": "市",
-                    "ruby": {
+                    "ruby": [{
                         "content": "chhī",
-                        "romanization": "POJ"
+                        "romanization": ["POJ"]
+                    },
+                    {
+                        "content": "tshī",
+                        "romanization": ["TL"]
                     }
+                    ]
                 }
             ]
         }
@@ -51,8 +56,14 @@
 }
 ```
 
-Will render be like:
+When specify romanization="POJ", above code will render be like:
 
 ```
 高雄市(Ko-hiông chhī)
+```
+
+And when specify romanization="TL", above code will render be like:
+
+```
+高雄市(Ko-hiông tshī)
 ```
