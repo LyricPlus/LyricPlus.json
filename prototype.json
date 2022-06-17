@@ -31,6 +31,10 @@
                                 "meta": {
                                     "note": "这段meta是作为optional的",
                                     "language": "较column的语言更优先",
+                                    "timeline":{
+                                        "begin":"仅仅标注开始时间的仅有begin也是接受的，毕竟这不是严格时间轴",
+                                        "end":"对于按照起止时间标注才有end"
+                                    },
                                     "singer": []
                                 },
                                 "note":"对于平凡的歌曲，sentence允许直接令content是一个string，否则就要按照层次套phrase和atom",
